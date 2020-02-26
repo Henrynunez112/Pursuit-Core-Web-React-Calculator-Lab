@@ -7,6 +7,18 @@ class Calculator extends React.Component{
         result: ""
     }
     
+    handleMainButton =(e)=>{
+        e.preventDefault();
+        let button = e.target.value
+        if(button === '='){
+            debugger
+            this.calculate()
+        }else if(button === 'C'){
+            this.clear()
+        }else if(button === 'CE'){
+            this.delete()
+        }
+    }
     //Shows the results of the input by pressing the "=" button
     calculate= () =>{
         try{

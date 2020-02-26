@@ -6,6 +6,36 @@ class Calculator extends React.Component{
     state = {
         result: ""
     }
+    
+    //Shows the results of the input by pressing the "=" button
+    calculate= () =>{
+        try{
+            this.setState({
+                // The eval() function evaluates if the input represented as a string.
+                result: (this.state.result || "") + ""
+            })
+        }catch(error){
+            this.setState({
+                result: error
+            })
+        }
+    }
+
+    //Clears out the output by pressing the C button
+    clear =()=>{
+        this.setState({
+            result: ""
+        })
+    }
+
+    //deletes the last character in the input by using the CE button
+    delete = () =>{
+        this.setState({
+            result: this.state.result.slice(0, -1)
+        })
+    }
+
+
     render(){
         return(
             <div>

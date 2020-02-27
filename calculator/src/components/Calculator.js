@@ -9,16 +9,43 @@ class Calculator extends React.Component{
     
     handleMainButton =(e)=>{
         e.preventDefault();
+        debugger
+
         let button = e.target.value
+
         if(button === '='){
-            debugger
+
             this.calculate()
+
         }else if(button === 'C'){
+
             this.clear()
+
         }else if(button === 'CE'){
+
             this.delete()
+        }else{
+            this.setState({
+                result: this.state.result + button
+            })
         }
     }
+
+    // onClick = (button) =>{
+    //     debugger
+    //     if(button === '='){
+    //         this.calculate()
+    //     }else if(button === 'C'){
+    //         this.clear()
+    //     }else if(button === 'CE'){
+    //         this.delete()
+    //     }else{
+    //         this.setState({
+    //             result: this.state.result + button
+    //         })
+
+    //     }
+    // }
     //Shows the results of the input by pressing the "=" button
     calculate= () =>{
         try{
@@ -53,7 +80,7 @@ class Calculator extends React.Component{
             <div>
                 <div className="calculator">
                     <Result result={this.state.result}/>
-                    <Button onClick={this.onClick}/>
+                    <Button  handleMainButton={this.handleMainButton}/>
                 </div>
             </div>
         )

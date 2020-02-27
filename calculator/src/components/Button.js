@@ -6,34 +6,34 @@ class Button extends React.Component{
         return (
             <div className="button">
             <div className="row">
-                <button name="(" onClick={e =>{this.props.onClick(e.target.name)}}>(</button>
-                <button name=")" onClick={e =>{this.props.onClick(e.target.name)}}>)</button>
-                <button name="CE" onClick={e =>{this.props.handleMainButton(e.target.name)}}>CE</button> 
-                <button name="C" onClick={e =>{this.props.handleMainButton(e.target.name)}}>C</button>
+                <button value="(" onClick={(e) =>{this.props.handleMainButton(e)}}>(</button>
+                <button value=")" onClick={(e) =>{this.props.handleMainButton(e)}}>)</button>
+                <button value="CE" onClick={(e) =>{this.props.handleMainButton(e)}}>CE</button> 
+                <button value="C" onClick={(e) =>{this.props.handleMainButton(e)}}>C</button>
             </div>
             <div className="row">
-                <button name="1" onClick={e =>{this.props.onClick(e.target.name)}}>1</button>
-                <button name="2" onClick={e =>{this.props.onClick(e.target.name)}}>2</button>
-                <button name="3" onClick={e =>{this.props.onClick(e.target.name)}}>3</button> 
-                <button name="+" onClick={e =>{this.props.onClick(e.target.name)}}>+</button>
+                <button value="1" onClick={(e) =>{this.props.handleMainButton(e.target.value)}}>1</button>
+                <button value="2" onClick={(e) =>{this.props.handleMainButton(e)}}>2</button>
+                <button value="3" onClick={(e) =>{this.props.handleMainButton(e)}}>3</button> 
+                <button value="+" onClick={(e) =>{this.props.handleMainButton(e)}}>+</button>
             </div>
             <div className="row">
-                <button name="4" onClick={e =>{this.props.onClick(e.target.name)}}>4</button>
-                <button name="5" onClick={e =>{this.props.onClick(e.target.name)}}>5</button>
-                <button name="6" onClick={e =>{this.props.onClick(e.target.name)}}>6</button>
-                <button name="-" onClick={e =>{this.props.onClick(e.target.name)}}>-</button>
+                <button value="4" onClick={(e) =>{this.props.handleMainButton(e)}}>4</button>
+                <button value="5" onClick={(e) =>{this.props.handleMainButton(e)}}>5</button>
+                <button value="6" onClick={(e) =>{this.props.handleMainButton(e)}}>6</button>
+                <button value="-" onClick={(e) =>{this.props.handleMainButton(e)}}>-</button>
             </div>
             <div className="row">
-                <button name="7" onClick={e =>{this.props.onClick(e.target.name)}}>7</button>
-                <button name="8" onClick={e =>{this.props.onClick(e.target.name)}}>8</button>
-                <button name="9" onClick={e =>{this.props.onClick(e.target.name)}}>9</button>
-                <button name="*" onClick={e =>{this.props.onClick(e.target.name)}}>*</button>
+                <button value="7" onClick={(e) =>{this.props.handleMainButton(e)}}>7</button>
+                <button value="8" onClick={(e) =>{this.props.handleMainButton(e)}}>8</button>
+                <button value="9" onClick={(e) =>{this.props.handleMainButton(e)}}>9</button>
+                <button value="*" onClick={(e) =>{this.props.handleMainButton(e)}}>*</button>
             </div>     
             <div className="row">
-                <button name="." onClick={e =>{this.props.onClick(e.target.name)}}>.</button>
-                <button name="0" onClick={e =>{this.props.onClick(e.target.name)}}>0</button>
-                <button name="=" onClick={e =>{this.props.handleMainButton(e.target.name)}}>=</button>
-                <button name="/" onClick={e =>{this.props.onClick(e.target.name)}}>/</button>
+                <button value="." onClick={(e) =>{this.props.handleMainButton(e)}}>.</button>
+                <button value="0" onClick={(e) =>{this.props.handleMainButton(e)}}>0</button>
+                <button value="=" onClick={(e) =>{this.props.handleMainButton(e)}}>=</button>
+                <button value="/" onClick={(e) =>{this.props.handleMainButton(e)}}>/</button>
             </div>
 
             </div>

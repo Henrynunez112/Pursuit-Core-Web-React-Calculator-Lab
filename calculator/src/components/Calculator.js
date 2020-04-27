@@ -3,7 +3,7 @@ import Screen from "./Screen/Screen";
 
 const Calculator = () => {
   return (
-    <main className='calculator'>
+    <main className="calculator">
       <Screen />
     </main>
   );

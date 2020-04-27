@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: inherit;
+}
+
+/* Varialbles */
+
+:root {
+  --color-platinum: #e6e8e6;
+  --color-cultured: #eff1f0;
+
+  --color-rifle-green: #475841;
+  --color-light-gray-transparent: rgba(206, 208, 206, 0.9);
+  --color-opal-transparent: rgba(159, 184, 173, 0.9);
+
+  --color-onyx: #3f403f;
+
+  --color-light-black: #222;
+  --color-black: #000;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom right,
+      var(--color-light-gray-transparent),
+      var(--color-opal-transparent)
+    ),
+    url(https://i.pinimg.com/originals/91/b5/cd/91b5cdab51e207263169904b227503b4.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator{
+    height: 80vh;
+    width: 25%;
+    box-shadow: 0 2rem 4rem var(--shadow);
+    background-color: var(--color-light-black);
+}

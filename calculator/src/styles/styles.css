@@ -83,3 +83,47 @@ body {
   color: var(--color-cultured);
   background-color: var(--color-rifle-green);
 }
+
+.keypad_row {
+  height: 11vh; /* (80vh calculator - 25vh screen) / 5 keypadRow components = 11vh */
+  width: 100%;
+  display: flex; /* To control the dimension */
+  color: white;
+}
+
+.keypad {
+  height: 55vh;
+  width: 100%;
+}
+
+.btn {
+  width: 25%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: inherit;
+  background-color: var(--color-white);
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+.btn:hover {
+  color: var(--color-light-white);
+  background-color: var( --color-rifle-green);
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.btn--large {
+  width: 50%;
+  color: var(--color-platinum);
+  background-color: var(--color-rifle-green);
+  transition: all 0.2s;
+}
+.btn--large:hover {
+  background-color: var(--color-platinum);
+  color: var(--color-rifle-green);
+}

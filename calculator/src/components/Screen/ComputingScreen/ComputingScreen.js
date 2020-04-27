@@ -1,7 +1,7 @@
 import React from "react";
 
-const ComputingScreen = () => {
-  return <div className="computing-screen">1 + 1 + 1</div>;
+const ComputingScreen = (props) => {
+  return <div className="computing-screen">{props.children}</div>;
 };
 
 export default ComputingScreen;

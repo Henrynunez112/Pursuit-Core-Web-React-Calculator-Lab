@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const ResultScreen = () => {
-    return(
-        <div>1234</div>
-    )
+  return <div className="result-screen">1234</div>;
 };
 
 export default ResultScreen;

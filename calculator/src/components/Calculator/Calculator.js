@@ -1,5 +1,5 @@
 import React from "react";
-import Screen from "./Screen/Screen";
+import Screen from "../Screen/Screen";
 
 const Calculator = () => {
   return (

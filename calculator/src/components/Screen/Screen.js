@@ -4,7 +4,7 @@ import ComputingScreen from './ComputingScreen/ComputingScreen'
 
 const Screen = () =>{
     return(
-        <div>
+        <div className='screen'>
             <ResultScreen />
             <ComputingScreen />
         </div>

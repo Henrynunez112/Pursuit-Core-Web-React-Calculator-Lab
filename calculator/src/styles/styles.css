@@ -47,9 +47,39 @@ body {
   align-items: center;
 }
 
-.calculator{
-    height: 80vh;
-    width: 25%;
-    box-shadow: 0 2rem 4rem var(--shadow);
-    background-color: var(--color-light-black);
+.calculator {
+  height: 80vh;
+  width: 25%;
+  box-shadow: 0 2rem 4rem var(--shadow);
+  background-color: var(--color-light-black);
+}
+
+.result-screen {
+  height: 19vh;
+  font-size: 8rem;
+  font-weight: 600;
+  /* To display the value at the bottom-right of the container */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.computation-screen {
+  height: 6vh;
+  font-size: 2.5rem;
+
+  /* To display the value at the bottom-right of the container */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.screen {
+  height: 25vh;
+  width: 100%;
+  padding: 0 2rem;
+  overflow: hidden;
+  white-space: no-wrap;
+  color: var(--color-cultured);
+  background-color: var(--color-rifle-green);
 }

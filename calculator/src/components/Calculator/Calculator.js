@@ -11,6 +11,7 @@ const Calculator = () => {
   const pressedBtn = (e) => {
     e.preventDefault();
     const btnValue = e.target.innerText;
+    let mutateEqua = [...equation]
     if (btnValue === "C") return clear();
     else if ((btnValue >= "0" && btnValue <= "9") || btnValue === ".") {
       setEquation(equation + btnValue);
@@ -21,13 +22,19 @@ const Calculator = () => {
         const fullEquation = evaluate(equation);
         if (!Number.isInteger(fullEquation)) {
           fullEquation.toFixed(2);
+          setResult(fullEquation)
         } else {
           setResult(fullEquation);
-          setEquation(fullEquation);
+          setEquation("");
         }
       }catch(err){
-        alert('Yikes!!!')
+        alert('Yikes!!!');
+        setEquation("")
+        setResult(0);
       }
+    }else{
+      mutateEqua.pop()
+      setEquation(mutateEqua);
     }
   };
 

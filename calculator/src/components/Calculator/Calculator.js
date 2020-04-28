@@ -4,7 +4,8 @@ import Keypad from "./Keypad/Keypad";
 import { evaluate } from "mathjs";
 
 const Calculator = () => {
-  const [result, setResult] = useState(0);
+  const initialState = 0
+  const [result, setResult] = useState(initialState);
   const [equation, setEquation] = useState("");
 
   const pressedBtn = (e) => {
@@ -16,17 +17,22 @@ const Calculator = () => {
     } else if (["+", "-", "*", "/", "%"].indexOf(btnValue) !== -1) {
       setEquation(equation + " " + btnValue + " ");
     } else if (btnValue === "=") {
-      const fullEquation = evaluate(equation);
-      if(!Number.isInteger(fullEquation)){
-        fullEquation.toFixed(2)
-      }else{
-        setResult(fullEquation);
+      try {
+        const fullEquation = evaluate(equation);
+        if (!Number.isInteger(fullEquation)) {
+          fullEquation.toFixed(2);
+        } else {
+          setResult(fullEquation);
+          setEquation(fullEquation);
+        }
+      }catch(err){
+        alert('Yikes!!!')
       }
     }
   };
 
   const clear = () => {
-    setResult(0);
+    setResult(initialState);
     setEquation("");
   };
 

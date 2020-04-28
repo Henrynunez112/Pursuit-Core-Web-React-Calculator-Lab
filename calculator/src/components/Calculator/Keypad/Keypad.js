@@ -6,36 +6,36 @@ const Keypad = (props) => {
   return (
     <div className="keypad">
       <KeypadRow>
-        <Button type='primary' onClick={props.onClick}>C</Button>
-        <Button>Del</Button>
-        <Button>%</Button>
-        <Button>/</Button>
+        <Button type='primary' pressedBtn={props.pressedBtn}>C</Button>
+        <Button pressedBtn={props.pressedBtn}>Del</Button>
+        <Button pressedBtn={props.pressedBtn}>%</Button>
+        <Button pressedBtn={props.pressedBtn}>/</Button>
       </KeypadRow>
 
       <KeypadRow>
-        <Button>9</Button>
-        <Button>8</Button>
-        <Button>7</Button>
-        <Button>*</Button>
+        <Button pressedBtn={props.pressedBtn}>9</Button>
+        <Button pressedBtn={props.pressedBtn}>8</Button>
+        <Button pressedBtn={props.pressedBtn}>7</Button>
+        <Button pressedBtn={props.pressedBtn}>*</Button>
       </KeypadRow>
 
       <KeypadRow>
-        <Button>6</Button>
-        <Button>5</Button>
-        <Button>4</Button>
-        <Button>-</Button>
+        <Button pressedBtn={props.pressedBtn}>6</Button>
+        <Button pressedBtn={props.pressedBtn}>5</Button>
+        <Button pressedBtn={props.pressedBtn}>4</Button>
+        <Button pressedBtn={props.pressedBtn}>-</Button>
       </KeypadRow>
 
       <KeypadRow>
-        <Button>3</Button>
-        <Button>2</Button>
-        <Button>1</Button>
-        <Button>+</Button>
+        <Button pressedBtn={props.pressedBtn}>3</Button>
+        <Button pressedBtn={props.pressedBtn}>2</Button>
+        <Button pressedBtn={props.pressedBtn}>1</Button>
+        <Button pressedBtn={props.pressedBtn}>+</Button>
       </KeypadRow>
 
       <KeypadRow>
-        <Button>0</Button>
-        <Button>.</Button>
+        <Button pressedBtn={props.pressedBtn}>0</Button>
+        <Button pressedBtn={props.pressedBtn}>.</Button>
         <Button type='large'>=</Button>
       </KeypadRow>
     </div>

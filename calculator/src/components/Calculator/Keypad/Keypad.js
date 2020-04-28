@@ -36,7 +36,7 @@ const Keypad = (props) => {
       <KeypadRow>
         <Button pressedBtn={props.pressedBtn}>0</Button>
         <Button pressedBtn={props.pressedBtn}>.</Button>
-        <Button type='large'>=</Button>
+        <Button type='large' pressedBtn={props.pressedBtn}>=</Button>
       </KeypadRow>
     </div>
   );
